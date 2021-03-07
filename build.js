@@ -1,6 +1,8 @@
 const minify = require('minify');
 const fs = require('fs');
 
+
+fs.mkdirSync("./min");
 fs.writeFileSync("min/doomer.min.js", "");
 
 fs.readdir('./src', (err, files) => {
