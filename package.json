@@ -4,7 +4,7 @@
   "description": "Doom JS",
   "main": "index.js",
   "scripts": {
-    "build": "minify src/*.js > min/doomer.min.js"
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/osmakari/doomer-js/issues"
   },
-  "homepage": "https://github.com/osmakari/doomer-js#readme"
+  "homepage": "https://github.com/osmakari/doomer-js#readme",
+  "dependencies": {
+    "minify": "^7.0.1"
+  }
 }
