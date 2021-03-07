@@ -30,17 +30,17 @@ let __D_ENGLSH__
 //
 // D_Main.C
 //
-let D_DEVSTR 	"Development mode ON.\n"
-let D_CDROM	 "CD-ROM Version: default.cfg from c:\\doomdata\n"
+let D_DEVSTR	"Development mode ON.\n"
+let D_CDROM	"CD-ROM Version: default.cfg from c:\\doomdata\n"
 
 //
 //	M_Menu.C
 //
 let PRESSKEY 	"press a key."
 let PRESSYN 	"press y or n."
-let QUITMSG	   "are you sure you want to\nquit this great game?"
+let QUITMSG	    "are you sure you want to\nquit this great game?"
 let LOADNET 	"you can't do load while in a net game!\n\n"PRESSKEY
-let QLOADNET  "you can't quickload during a netgame!\n\n"PRESSKEY
+let QLOADNET	"you can't quickload during a netgame!\n\n"PRESSKEY
 let QSAVESPOT	"you haven't picked a quicksave slot yet!\n\n"PRESSKEY
 let SAVEDEAD 	"you can't save if you aren't playing!\n\n"PRESSKEY
 let QSPROMPT 	"quicksave over your game named\n\n'%s'?\n\n"PRESSYN
