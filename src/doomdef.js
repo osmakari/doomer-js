@@ -15,22 +15,26 @@ const TICRATE = 35
 // The current state of the game: whether we are
 // playing, gazing at the intermission screen,
 // the game final animation, or a demo. 
-let gamestate_t = {
+const gamestate_t = {
     GS_LEVEL: 0,
     GS_INTERMISSION: 1,
     GS_FINALE: 2,
     GS_DEMOSCREEN: 3
 }
 
+//
 // Difficulty/skill settings/filters.
+//
 
 // Skill flags.
 const MTF_EASY = 1
 const MTF_NORMAL = 2
 const MTF_HARD = 4
 
+// Deaf monsters/do not react to sound.
+const MTF_AMBUSH = 8
 
-let skill_t = {
+const skill_t = {
     sk_baby: 0,
     sk_easy: 1,
     sk_medium: 2,
@@ -39,7 +43,7 @@ let skill_t = {
 }
 
 // Key cards.
-let card_t = {
+const card_t = {
     it_bluecard: 0,
     it_yellowcard: 1,
     it_redcard: 2,
@@ -49,3 +53,65 @@ let card_t = {
     
     NUMCARDS: 6
 }
+
+// The defined weapons,
+//  including a marker indicating
+//  user has not changed weapon.
+const weapontype_t = {
+    wp_fist: 0,
+    wp_pistol: 1,
+    wp_shotgun: 2,
+    wp_chaingun: 3,
+    wp_missile: 4,
+    wp_plasma: 5,
+    wp_bfg: 6,
+    wp_chainsaw: 7,
+    wp_supershotgun: 8,
+
+    NUMWEAPONS: 9,
+    
+    // No pending weapon change.
+    wp_nochange: 10
+}
+
+
+const ammotype_t = {
+
+    am_clip: 0,	// Pistol / chaingun ammo.
+    am_shell: 1,	// Shotgun / double barreled shotgun.
+    am_cell: 2,	// Plasma rifle, BFG.
+    am_misl: 3,	// Missile launcher.
+    NUMAMMO: 4,
+    am_noammo: 5	// Unlimited for chainsaw / fist.	
+    
+}
+
+// Power up artifacts.
+const powertype_t = {
+
+    pw_invulnerability: 0,
+    pw_strength: 1,
+    pw_invisibility: 2,
+    pw_ironfeet: 3,
+    pw_allmap: 4,
+    pw_infrared: 5,
+    NUMPOWERS: 6
+}
+
+//
+// Power up durations,
+//  how many seconds till expiration,
+//  assuming TICRATE is 35 ticks/second.
+//
+
+const powerduration_t = {
+    INVULNTICS:(30*TICRATE),
+    INVISTICS:(60*TICRATE),
+    INFRATICS:(120*TICRATE),
+    IRONTICS:(60*TICRATE)
+}
+
+
+
+
+
