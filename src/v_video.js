@@ -1,8 +1,7 @@
-let screens = new Uint8Array();
+let screens;
 
 function V_Init() {
-    let index //int
 
-
+    screens = new Uint8Array(SCREENWIDTH*SCREENHEIGHT*4); 
 
 }
