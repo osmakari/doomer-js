@@ -1,0 +1,19 @@
+{
+  "name": "doomer",
+  "version": "1.0.0",
+  "description": "Doom JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "minify src/*.js > min/doomer.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmakari/doomer-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osmakari/doomer-js/issues"
+  },
+  "homepage": "https://github.com/osmakari/doomer-js#readme"
+}
