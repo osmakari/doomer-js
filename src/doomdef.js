@@ -7,6 +7,7 @@ const SCREENHEIGHT = 200
  * tied to the scale implied by the graphics 
  * */ 
 const SCREEN_MUL = 1
+const INV_ASPECT_RATIO = 0.625
 
 // State updates, number of tics / second.
 const TICRATE = 35
