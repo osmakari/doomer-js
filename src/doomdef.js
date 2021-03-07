@@ -111,6 +111,42 @@ const powerduration_t = {
     IRONTICS:(60*TICRATE)
 }
 
+//
+// DOOM keyboard definition.
+//
+
+const KEY_RIGHTARROW = 39
+const KEY_LEFTARROW = 37
+const KEY_UPARROW = 38
+const KEY_DOWNARROW = 40
+const KEY_ESCAPE = 27
+const KEY_ENTER = 13
+const KEY_TAB = 9
+const KEY_F1 = 112
+const KEY_F2 = 113
+const KEY_F3 = 114
+const KEY_F4 = 115
+const KEY_F5 = 116
+const KEY_F6 = 117
+const KEY_F7 = 118
+const KEY_F8 = 119
+const KEY_F9 = 120
+const KEY_F10 = 121
+const KEY_F11 = 122
+const KEY_F12 = 123
+
+const KEY_BACKSPACE = 8
+const KEY_PAUSE = 19
+
+const KEY_EQUALS = 222
+const KEY_MINUS = 173
+
+const KEY_RSHIFT = 16
+const KEY_RCTRL = 17
+const KEY_RALT = 18
+
+const KEY_LALT = KEY_RALT
+
 
 
 
