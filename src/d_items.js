@@ -1,12 +1,12 @@
 // Weapon info: sprite frames, ammunition use.
-const weaponinfo_t = {
+class weaponinfo_t {
 
-    ammotype_t: ammo, //enum
-    upstate: null,    //int
-    downstate: null,  //int
-    readystate: null, //int
-    atkstate: null,   //int
-    flashstate: null  //int
+    ammotype_t = ammo;   //enum
+    upstate = null;     //int
+    downstate = null;   //int
+    readystate = null;  //int
+    atkstate = null;    //int
+    flashstate = null;  //int
 }
 
 
