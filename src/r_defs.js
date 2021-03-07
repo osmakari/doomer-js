@@ -183,4 +183,3 @@ class post_t {
     topdelta = null; //byte, -1 is the last post in a column
     length = null; //byte, length data bytes follows
 }
-
