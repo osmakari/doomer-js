@@ -4,11 +4,11 @@ function I_Main () {
     ctx = canvas.getContext("2d");
 
     // TODO: ADD MULTIPLIER
-    canvas.width = SCREENWIDTH;
-    canvas.height = SCREENHEIGHT;
+    canvas.width = SCREENWIDTH*scaler;
+    canvas.height = SCREENHEIGHT*scaler;
 
-    canvas.style.width = SCREENWIDTH;
-    canvas.style.height = SCREENHEIGHT;
+    canvas.style.width = SCREENWIDTH*scaler;
+    canvas.style.height = SCREENHEIGHT*scaler;
 
     D_DoomMain();
 }
