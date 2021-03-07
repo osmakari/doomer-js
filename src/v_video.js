@@ -176,7 +176,7 @@ if(RANGECHECK) {
 	    V_MarkRect (x, y, patch.width, patch.height); 
 
     col = 0; 
-    desttop = screens[(SCREENWIDTH*SCREENWIDTH*scrn)+y*SCREENWIDTH+x]; 
+    desttop = (SCREENWIDTH*SCREENWIDTH*scrn)+y*SCREENWIDTH+x; 
 	 
     w = patch.width; 
 
@@ -360,6 +360,7 @@ function V_DrawBlock (x, y, scrn, width, height, src) {
     while (height--) 
     { 
         for(let x = 0; x < width; x++) {
+            // Writing straight to the screen buffer because this never writes anywhere else
             screens[dest + x] = screens[src + x];
         }
         src += width;
@@ -373,35 +374,33 @@ function V_DrawBlock (x, y, scrn, width, height, src) {
 // V_GetBlock
 // Gets a linear block of pixels from the view buffer.
 //
-void
-V_GetBlock
-( int		x,
-  int		y,
-  int		scrn,
-  int		width,
-  int		height,
-  byte*		dest ) 
-{ 
-    byte*	src; 
-	 
-#ifdef RANGECHECK 
+function V_GetBlock (x, y, scrn, width, height, dest) { 
+    let src; 
+    // THIS FUNCTION IS NOT EVEN USED SO WHATEVER
+	return;
+if(RANGECHECK) { 
     if (x<0
 	||x+width >SCREENWIDTH
 	|| y<0
 	|| y+height>SCREENHEIGHT 
-	|| (unsigned)scrn>4 )
+	|| scrn>4 )
     {
-	I_Error ("Bad V_DrawBlock");
+	    console.error("Bad V_DrawBlock");
     }
-#endif 
+}
  
-    src = screens[scrn] + y*SCREENWIDTH+x; 
+    src = SCREENWIDTH*SCREENHEIGHT*scrn + y*SCREENWIDTH+x; 
 
     while (height--) 
     { 
-	memcpy (dest, src, width); 
-	src += SCREENWIDTH; 
-	dest += width; 
+        for(let x = 0; x < width; x++) {
+            // TODO:
+            for(let x = 0; x < width; x++) {
+                screens[dest + x] = screens[src + x];
+            }
+        }
+        src += SCREENWIDTH; 
+        dest += width; 
     } 
 } 
 
