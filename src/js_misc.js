@@ -1,5 +1,17 @@
 /**
  * 
+ * @param {ArrayBuffer} ab 
+ */
+function JS_ArrayBufferToString (ab) {
+    let str = "";
+    for(let a = 0; a < ab.byteLength; a++) {
+        str += String.fromCharCode(ab[a]);
+    }
+    return str;
+}
+
+/**
+ * 
  * @param {string} file
  * @description Loads a file to an buffer
  * @returns Promise (ArrayBuffer)

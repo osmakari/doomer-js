@@ -9,7 +9,6 @@ class weaponinfo_t {
     flashstate = null;  //int
 }
 
-
 //
 // PSPRITE ACTIONS for waepons.
 // This struct controls the weapon animations.
