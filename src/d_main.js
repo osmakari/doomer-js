@@ -26,8 +26,8 @@ function D_DoomMain() {
     }).catch((e) => {
         // Possible error
     });
-
-
+    //Loading defaults
+    M_LoadDefaults()
     // Never returning from this loop
     D_DoomLoop();
 }

@@ -47,8 +47,9 @@ let defaults = {
 
 
  async function M_LoadDefaults () {
-    const newData = JSON.parse(await JS_LoadFile("DEFAULTS.json"));
+    const newData = JSON.parse(await JS_LoadFile("DEFAULT.json"));
     defaults = {...defaults, ...newData};
+    console.log(newData);
 
 }
 

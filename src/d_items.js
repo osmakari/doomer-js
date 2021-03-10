@@ -1,7 +1,7 @@
 // Weapon info: sprite frames, ammunition use.
 class weaponinfo_t {
 
-    ammotype_t = ammo;   //enum
+    ammo = null;        //ammotype_t
     upstate = null;     //int
     downstate = null;   //int
     readystate = null;  //int
@@ -22,6 +22,7 @@ class weaponinfo_t {
 // atkstate, i.e. attack/fire/hit frame
 // flashstate, muzzle flash
 //
+/** 
 weaponinfo = [
     [
         // fist
@@ -106,5 +107,5 @@ weaponinfo = [
     ]
 ]
 
-
+*/ 
 
