@@ -6,7 +6,7 @@ let numlumps = 0;
  * @param {string} filename 
  */
 async function W_AddFile (filename) {
-/*
+
     let fileinfo;
     let singleinfo = {
         filepos: 0,
@@ -14,7 +14,7 @@ async function W_AddFile (filename) {
         name: ""
     };
     
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
         try {
             let data = await JS_LoadFile(filename);
             if(filename.slice(filename.length - 3, filename.length) == "wad") {
@@ -37,5 +37,5 @@ async function W_AddFile (filename) {
         }
 
     })
-*/
+
 }
