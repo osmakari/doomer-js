@@ -356,8 +356,8 @@ let STSTR_CLEV		"Changing Level..."
 //
 //	F_Finale.C
 //
-let E1TEXT \
-"Once you beat the big badasses and\n"\
+let E1TEXT =
+"Once you beat the big badasses and\n" +
 "clean out the moon base you're supposed\n"\
 "to win, aren't you? Aren't you? Where's\n"\
 "your fat reward and ticket home? What\n"\
