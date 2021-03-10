@@ -139,7 +139,7 @@ function V_CopyRect (srcx, srcy, srcscrn, width, height, destx, desty, destscrn)
         dest += SCREENWIDTH; 
     } 
 } 
- 
+/*
 
 //
 // V_DrawPatch
@@ -271,14 +271,14 @@ V_DrawPatchFlipped
     }			 
 } 
  
-
+*/
 
 //
 // V_DrawPatchDirect
 // Draws directly to the screen on the pc. 
 //
-void V_DrawPatchDirect (x, y, scrn,	patch) {
-    V_DrawPatch (x,y,scrn, patch); 
+//void V_DrawPatchDirect (x, y, scrn,	patch) {
+//   V_DrawPatch (x,y,scrn, patch); 
 
     /*
     int		count;
@@ -331,7 +331,7 @@ void V_DrawPatchDirect (x, y, scrn,	patch) {
 	if ( ((++x)&3) == 0 ) 
 	    desttop++;	// go to next byte, not next plane 
     }*/ 
-} 
+//} 
  
 
 
