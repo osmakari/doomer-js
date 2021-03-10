@@ -47,7 +47,7 @@ let defaults = {
 
 
  async function M_LoadDefaults () {
-    const newData = JSON.parse(await JS_LoadFile("DEFAULT.json"));
+    const newData = JSON.parse(JS_ArrayBufferToString(await JS_LoadFile("DEFAULT.json")));
     defaults = {...defaults, ...newData};
     console.log(newData);
 
