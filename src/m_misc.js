@@ -4,10 +4,10 @@ let defaults = {
         sfx_volume: 13,
         music_volume: 13,
         show_messages: 1,
-        key_right: 77,
-        key_left: 75,
-        key_up: 72,
-        key_down: 80,
+        key_right: 39,
+        key_left: 37,
+        key_up: 38,
+        key_down: 40,
         key_strafeleft: 51,
         key_straferight: 52,
         key_fire: 29,
@@ -46,8 +46,8 @@ let defaults = {
     }
 
 
-function M_LoadDefaults () {
-    const newData = JSON.parse(JS_LoadFile("DEFAULTS.json"));
+ async function M_LoadDefaults () {
+    const newData = JSON.parse(await JS_LoadFile("DEFAULTS.json"));
     defaults = {...defaults, ...newData};
 
 }

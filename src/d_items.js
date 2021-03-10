@@ -25,7 +25,7 @@ class weaponinfo_t {
 weaponinfo = [
     [
         // fist
-        am_noammo,
+        ammotype_t.am_noammo,
         S_PUNCHUP,
         S_PUNCHDOWN,
         S_PUNCH,
@@ -34,7 +34,7 @@ weaponinfo = [
     ], 
     [
         //pistol
-        am_clip,
+        ammotype_t.am_clip,
         S_PISTOLUP,
         S_PISTOLDOWN,
         S_PISTOL,
@@ -43,7 +43,7 @@ weaponinfo = [
     ],
     [
         //shotgun
-        am_shell,
+        ammotype_t.am_shell,
         S_SGUNUP,
         S_SGUNDOWN,
         S_SGUN,
@@ -52,7 +52,7 @@ weaponinfo = [
     ],
     [
         //chaingun
-        am_clip,
+        ammotype_t.am_clip,
         S_CHAINUP,
         S_CHAINDOWN,
         S_CHAIN,
@@ -61,7 +61,7 @@ weaponinfo = [
     ],
     [
         // missile launcher
-        am_misl,
+        ammotype_t.am_misl,
         S_MISSILEUP,
         S_MISSILEDOWN,
         S_MISSILE,
@@ -70,7 +70,7 @@ weaponinfo = [
     ],
     [
         // plasma rifle
-        am_cell,
+        ammotype_t.am_cell,
         S_PLASMAUP,
         S_PLASMADOWN,
         S_PLASMA,
@@ -79,7 +79,7 @@ weaponinfo = [
     ],
     [
         // bfg 9000
-        am_cell,
+        ammotype_t.am_cell,
         S_BFGUP,
         S_BFGDOWN,
         S_BFG,
@@ -88,7 +88,7 @@ weaponinfo = [
     ],
     [
         // chainsaw
-        am_noammo,
+        ammotype_t.am_noammo,
         S_SAWUP,
         S_SAWDOWN,
         S_SAW,
@@ -97,7 +97,7 @@ weaponinfo = [
     ],
     [
         // super shotgun
-        am_shell,
+        ammotype_t.am_shell,
         S_DSGUNUP,
         S_DSGUNDOWN,
         S_DSGUN,
