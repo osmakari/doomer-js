@@ -28,6 +28,8 @@ function D_DoomMain() {
     });
     //Loading defaults
     M_LoadDefaults()
+
+    W_InitMultipleFiles(["doom1.wad"]);
     // Never returning from this loop
     D_DoomLoop();
 }

@@ -29,7 +29,7 @@ function JS_LoadFile (file) {
             let abuff = ev.target.response;
             
             if(abuff && abuff.byteLength > 0) {
-                resolve(new Int8Array(abuff));
+                resolve(new Uint8Array(abuff));
             }
             else {
                 reject(ev);
