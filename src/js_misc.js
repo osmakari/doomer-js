@@ -23,9 +23,13 @@ function JS_LoadFile (file) {
         xhttp.responseType = "arraybuffer";
 
         xhttp.onload = (ev) => {
+            /**
+             * @type {ArrayBuffer}
+             */
             let abuff = ev.target.response;
-            if(abuff && abuff.length > 0) {
-                resolve(abuff);
+            
+            if(abuff && abuff.byteLength > 0) {
+                resolve(new Int8Array(abuff));
             }
             else {
                 reject(ev);
