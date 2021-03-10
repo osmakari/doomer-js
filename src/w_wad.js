@@ -18,7 +18,7 @@ async function W_AddFile (filename) {
         try {
             let data = await JS_LoadFile(filename);
             if(filename.slice(filename.length - 3, filename.length) == "wad") {
-
+                // SINGLE LUMP
                 fileinfo = singleinfo;
                 fileinfo.size = data.length;
                 
@@ -29,7 +29,8 @@ async function W_AddFile (filename) {
                 numlumps++;
             }
             else {
-
+                // WAD FILE
+                
             }
         }
         catch {
